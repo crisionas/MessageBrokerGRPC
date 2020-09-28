@@ -25,4 +25,3 @@ D:\Visual Projects\UTM\PAD\Lab1.2\ReceiverGRPC\ReceiverGRPC\obj\Debug\netcoreapp
 D:\Visual Projects\UTM\PAD\Lab1.2\ReceiverGRPC\ReceiverGRPC\obj\Debug\netcoreapp3.1\ReceiverGRPC.dll
 D:\Visual Projects\UTM\PAD\Lab1.2\ReceiverGRPC\ReceiverGRPC\obj\Debug\netcoreapp3.1\ReceiverGRPC.pdb
 D:\Visual Projects\UTM\PAD\Lab1.2\ReceiverGRPC\ReceiverGRPC\obj\Debug\netcoreapp3.1\ReceiverGRPC.genruntimeconfig.cache
-D:\Visual Projects\UTM\PAD\Lab1.2\ReceiverGRPC\ReceiverGRPC\obj\Debug\netcoreapp3.1\ReceiverGRPC.csprojAssemblyReference.cache

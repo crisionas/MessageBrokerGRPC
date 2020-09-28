@@ -5,10 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Protos\TransactionAgent.proto" />
     <None Remove="Protos\WorkerAgent.proto" />
   </ItemGroup>
 
   <ItemGroup>
+    <Protobuf Include="Protos\TransactionAgent.proto" />
     <Protobuf Include="Protos\WorkerAgent.proto" />
   </ItemGroup>
 

@@ -10,7 +10,7 @@ using grpc = global::Grpc.Core;
 namespace WorkerAgent {
   public static partial class WorkerRegistration
   {
-    static readonly string __ServiceName = "WorkerAgent.WorkerRegistration";
+    static readonly string __ServiceName = "greet.WorkerRegistration";
 
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
@@ -42,15 +42,15 @@ namespace WorkerAgent {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
-    static readonly grpc::Marshaller<global::WorkerAgent.WorkerMessage> __Marshaller_WorkerAgent_WorkerMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WorkerAgent.WorkerMessage.Parser));
-    static readonly grpc::Marshaller<global::WorkerAgent.ConfirmationResponse> __Marshaller_WorkerAgent_ConfirmationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WorkerAgent.ConfirmationResponse.Parser));
+    static readonly grpc::Marshaller<global::WorkerAgent.WorkerMessage> __Marshaller_greet_WorkerMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WorkerAgent.WorkerMessage.Parser));
+    static readonly grpc::Marshaller<global::WorkerAgent.ConfirmationResponse> __Marshaller_greet_ConfirmationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WorkerAgent.ConfirmationResponse.Parser));
 
     static readonly grpc::Method<global::WorkerAgent.WorkerMessage, global::WorkerAgent.ConfirmationResponse> __Method_RegisterWorker = new grpc::Method<global::WorkerAgent.WorkerMessage, global::WorkerAgent.ConfirmationResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "RegisterWorker",
-        __Marshaller_WorkerAgent_WorkerMessage,
-        __Marshaller_WorkerAgent_ConfirmationResponse);
+        __Marshaller_greet_WorkerMessage,
+        __Marshaller_greet_ConfirmationResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor

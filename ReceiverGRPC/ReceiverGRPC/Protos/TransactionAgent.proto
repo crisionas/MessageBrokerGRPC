@@ -1,0 +1,35 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "TransactionAgent";
+
+package greet;
+
+service ExecuteTransaction {
+  // Sends a greeting
+  rpc PublicTransaction (TransactionMessage) returns (TransactionResponse);
+}
+
+// The request message containing the user's name.
+message TransactionMessage {
+    string owner_card_id = 1;
+    string recipient_card_id = 2;
+    int32 transaction_summ = 3;
+    string ccy = 4;
+    string aditional_comment =5;
+    TypeTransaction transactionType=6;
+}
+
+enum TypeTransaction{
+	    Payment=0;
+        Credit=1;
+        Authorization=2;
+        Delayed_Capture=3;
+        Void=4;
+        Prenote=5;
+}
+
+// The response message containing the greetings.
+message TransactionResponse {
+  string message = 1;
+  bool status =2;
+}

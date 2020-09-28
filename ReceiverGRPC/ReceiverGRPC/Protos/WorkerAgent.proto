@@ -2,7 +2,7 @@
 
 option csharp_namespace = "WorkerAgent";
 
-package WorkerAgent;
+package greet;
 
 service WorkerRegistration{
 	rpc RegisterWorker (WorkerMessage) returns (ConfirmationResponse);

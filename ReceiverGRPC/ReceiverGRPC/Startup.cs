@@ -32,7 +32,7 @@ namespace ReceiverGRPC
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<Worker>();
+                endpoints.MapGrpcService<Transaction>();
 
                 endpoints.MapGet("/", async context =>
                 {

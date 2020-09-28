@@ -24,13 +24,12 @@ namespace WorkerAgent {
     static WorkerAgentReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhQcm90b3MvV29ya2VyQWdlbnQucHJvdG8SC1dvcmtlckFnZW50IjkKDVdv",
-            "cmtlck1lc3NhZ2USEQoJd29ya2VyX2lkGAEgASgJEhUKDXdvcmtlcl9hZHJl",
-            "c3MYAiABKAkiNwoUQ29uZmlybWF0aW9uUmVzcG9uc2USDwoHbWVzc2FnZRgB",
-            "IAEoCRIOCgZzdGF0dXMYAiABKAgyZQoSV29ya2VyUmVnaXN0cmF0aW9uEk8K",
-            "DlJlZ2lzdGVyV29ya2VyEhouV29ya2VyQWdlbnQuV29ya2VyTWVzc2FnZRoh",
-            "LldvcmtlckFnZW50LkNvbmZpcm1hdGlvblJlc3BvbnNlQg6qAgtXb3JrZXJB",
-            "Z2VudGIGcHJvdG8z"));
+            "ChhQcm90b3MvV29ya2VyQWdlbnQucHJvdG8SBWdyZWV0IjkKDVdvcmtlck1l",
+            "c3NhZ2USEQoJd29ya2VyX2lkGAEgASgJEhUKDXdvcmtlcl9hZHJlc3MYAiAB",
+            "KAkiNwoUQ29uZmlybWF0aW9uUmVzcG9uc2USDwoHbWVzc2FnZRgBIAEoCRIO",
+            "CgZzdGF0dXMYAiABKAgyWQoSV29ya2VyUmVnaXN0cmF0aW9uEkMKDlJlZ2lz",
+            "dGVyV29ya2VyEhQuZ3JlZXQuV29ya2VyTWVzc2FnZRobLmdyZWV0LkNvbmZp",
+            "cm1hdGlvblJlc3BvbnNlQg6qAgtXb3JrZXJBZ2VudGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -20,15 +20,18 @@ namespace ReceiverGRPC.Implementation
             var address = host.ServerFeatures.Get<IServerAddressesFeature>().Addresses.First();
 
             Console.WriteLine($"Receiver listen at {address}");
-            var request = new WorkerMessage() { WorkerAdress = host };
+            Random random = new Random();
+            string randomNumber = random.Next(1, 1000).ToString();
+            var request = new WorkerMessage() { WorkerId = randomNumber, WorkerAdress = address };
 
             try
             {
                 var reply = client.RegisterWorker(request);
+                Console.WriteLine($"Worker reply: {reply.Status},");
             }
-            catch
+            catch(Exception e)
             {
-
+                Console.WriteLine($"Error! {e.Message}");
             }
         }
     }
