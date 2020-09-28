@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "WorkerAgent";
+
+package WorkerAgent;
+
+service WorkerRegistration{
+	rpc RegisterWorker (WorkerMessage) returns (ConfirmationResponse);
+}
+
+
+message WorkerMessage{
+	string worker_id =1;
+	string worker_adress=2;
+}
+
+message ConfirmationResponse{
+	string message=1;
+	bool status = 2;
+}
